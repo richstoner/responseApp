@@ -1,10 +1,39 @@
-//
-//  MainMenuViewController.m
-//  moleidapp
-//
-//  Created by Rich Stoner on 6/24/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+/*
+ * Created by Rich Stoner, September 10th, 2011
+ * 
+ * Copyright (c) 2011 Rich Stoner, wholeslide.com
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 
+ * Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the following disclaimer.
+ * 
+ * Redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution.
+ * 
+ * Neither the name of the project's author nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
+
 
 #import "ExperimentViewController.h"
 #import "CJSONDeserializer.h"
@@ -516,6 +545,29 @@
     NSLog(@"File written to %@\n", filePath);
     NSError *error = NULL;
     NSData *jsonData = [[CJSONSerializer serializer] serializeObject:trialArray error:&error];
+    
+    NSMutableString * csv = [NSMutableString string];
+    [csv appendString:@"<!DOCTYPE HTML><head><style type='text/css'>"];
+    [csv appendString:@"<!DOCTYPE HTML><head><style type='text/css'>"];
+    [csv appendString:@"body { font-family:'Helvetica',Georgia,Serif; color: #000; background-color: transparent; line-height: 12pt; font-size: 10pt; text-align: left;}"];
+    [csv appendString:@"h1 {font-family:'Helvetica',Georgia,Serif; color: #999; text-align: left; font-weight: bold; line-height: 12pt; font-size: 11pt;padding-bottom: 3px;}"];
+	[csv appendString:@"p { padding: 5px;}"];
+    [csv appendString:@"</style></head><body>"];
+    [csv appendFormat:@"<h1>Last trial: %@</h1>", filePath];
+    
+    for(NSArray* record in trialArray)
+    {
+        NSString* message = [record objectAtIndex:0];
+        NSNumber* timepoint = [record objectAtIndex:1];
+        
+        [csv appendFormat:@"<p>%@ - %f ms</p>\n", message, [timepoint floatValue]];
+    }
+    
+    [csv appendString:@"</body></html>"];
+    
+    NSString* lastTrialPath = [NSString stringWithFormat:@"%@/lastTrial.html", documentsDirectory];
+    [csv writeToFile:lastTrialPath atomically:YES encoding:NSStringEncodingConversionAllowLossy error:&error];
+    
     
     [jsonData writeToFile:filePath atomically:YES];
 }

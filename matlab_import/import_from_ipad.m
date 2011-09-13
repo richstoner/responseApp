@@ -4,7 +4,7 @@ clear all
 clc
 
 % set this filename
-json_filename = 'rich-exp-2011-09-12-23-10-15.json';
+json_filename = 'Rich.stoner-exp-2011-09-13-14-52-32.json';
 json_str = fileread(json_filename);
 
 % parsed using third party library

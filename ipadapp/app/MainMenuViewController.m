@@ -1,10 +1,38 @@
-//
-//  MainMenuViewController.m
-//  moleidapp
-//
-//  Created by Rich Stoner on 6/24/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+/*
+ * Created by Rich Stoner, September 10th, 2011
+ * 
+ * Copyright (c) 2011 Rich Stoner, wholeslide.com
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 
+ * Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the following disclaimer.
+ * 
+ * Redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution.
+ * 
+ * Neither the name of the project's author nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
 
 #import "MainMenuViewController.h"
 #import "QuartzCore/QuartzCore.h"
@@ -145,7 +173,9 @@
                         cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:24];
                         [cell.textLabel setTextAlignment:UITextAlignmentCenter];
                         [[cell textLabel] setTextColor:[UIColor whiteColor]];
-                        [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"mesh-background.png"]]];
+//                        [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"mesh-background.png"]]];
+                        [cell setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.3 alpha:1.0]];
+                        [cell setClipsToBounds:YES];
                         cell.selectionStyle = UITableViewCellSelectionStyleGray;
                         break;
                     default:
@@ -368,184 +398,6 @@
     }
 }
     
-    
-        
-//        
-//        
-//        switch ([ indexPath indexAtPosition: 0]) {
-//            case(0):
-//                switch([ indexPath indexAtPosition: 1]) {
-//                    case(0):
-//                        {
-                            
-
-                            
-                            
-                            //                        UISlider *musicVolumeControl = [ [ UISlider alloc ] initWithFrame: CGRectMake(170, 0, 125, 50) ];
-//                        musicVolumeControl.minimumValue = 0.0;
-//                        musicVolumeControl.maximumValue = 10.0;
-//                        musicVolumeControl.tag = 0;
-//                        musicVolumeControl.value = 3.5;
-//                        musicVolumeControl.continuous = YES;
-//                        [musicVolumeControl addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
-//                        [ cell addSubview: musicVolumeControl ];
-                        
-//                        [ musicVolumeControl release ];
-//                        }
-//                        break;
-//                }
-//            case(1):
-//                switch ([ indexPath indexAtPosition: 1 ]) {
-//                    case(0):
-//                    {
-//                        UITextField *playerTextField = [ [ UITextField alloc ] initWithFrame: CGRectMake(150, 10, 145, 34) ];
-//                        playerTextField.adjustsFontSizeToFitWidth = YES;
-//                        playerTextField.textColor = [UIColor blackColor];
-//                        playerTextField.font = [UIFont systemFontOfSize:17.0];
-//                        playerTextField.placeholder = @"";
-//                        playerTextField.backgroundColor = [UIColor clearColor];
-//                        playerTextField.autocorrectionType = UITextAutocorrectionTypeNo;        // no auto correction support
-//                        playerTextField.autocapitalizationType = UITextAutocapitalizationTypeNone; // no auto capitalization support
-//                        playerTextField.textAlignment = UITextAlignmentRight;
-//                        playerTextField.keyboardType = UIKeyboardTypeDefault; // use the default type input method (entire keyboard)
-//                        playerTextField.returnKeyType = UIReturnKeyDone;
-//                        playerTextField.tag = 0;
-//                        playerTextField.delegate = self;
-//                        
-//                        playerTextField.clearButtonMode = UITextFieldViewModeNever; // no clear 'x' button to the right
-//                        playerTextField.text = @"";
-//                        [ playerTextField setEnabled: YES ];
-//                        [ cell addSubview: playerTextField ];
-//                        cell.textLabel.text = @"Player"; // OS3
-//                        //       cell.text = @"Player";
-//                        [playerTextField release];
-//                    }
-//                        break;
-//                    case(1):
-//                    {
-//                        UISwitch *resetControl = [ [ UISwitch alloc ] initWithFrame: CGRectMake(200, 10, 0, 0) ];
-//                        resetControl.on = YES;
-//                        resetControl.tag = 1;
-//                        [resetControl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-//                        [ cell addSubview: resetControl ];
-//                        cell.textLabel.text = @"Reset"; // OS3
-//                        //       cell.text = @"Reset";
-//                        [resetControl release];
-//                    }
-//                        break;
-//                    case(2):
-//                    {
-//                        UISwitch *debugControl = [ [ UISwitch alloc ] initWithFrame: CGRectMake(200, 10, 0, 0) ];
-//                        debugControl.on = NO;
-//                        debugControl.tag = 2;
-//                        [debugControl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-//                        [ cell addSubview: debugControl ];
-//                        cell.textLabel.text = @"Debug"; // OS3
-//                        //       cell.text = @"Debug";
-//                        [debugControl release];
-//                    }
-//                        break;
-//                }
-//                break;
-//            case(2):
-//            {
-//                UITextField *versionControl = [ [ UITextField alloc ] initWithFrame: CGRectMake(170, 10, 125, 38) ];
-//                versionControl.text = @"1.0.0 Rev. B";
-//                [ cell addSubview: versionControl ];
-//                
-//                [ versionControl setEnabled: YES ];
-//                versionControl.tag = 2;
-//                versionControl.delegate = self;
-//                cell.textLabel.text = @"Version"; // OS3
-//                //     cell.text = @"Version";
-//                [versionControl release];
-//            }
-//                break;
-//        }
-//    }
-//    
-//    return cell;
-//}
-//                        
-//                        
-//                        
-//    
-//    
-//    
-//    
-//    
-//    
-//    
-//    
-//    
-    
-//    static NSString *CellIdentifier = @"Cell";
-//    SiteCell *cell = (SiteCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    
-//    if (cell == nil) {
-//        cell = [[[SiteCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];        
-//        }
-//    
-//    tableView.separatorColor = [UIColor darkGrayColor];
-//
-//    
-//    switch (indexPath.section) {
-//        case 0:
-//            
-//            [cell setMainText:@"Start Experiment"];
-//            
-//            break;
-//        case 1:
-//            
-//            switch (indexPath.row) {
-//                case 0:
-//                    [cell setMainText:@"Number of Trials"];
-//                    break;
-//                case 1:
-//                    [cell setMainText:@"Dot size"];
-//                    break;
-//
-//                    
-//                default:
-//                    break;
-//            } 
-//            
-//            
-//            
-//            
-//            break;
-//        case 2:
-//            [cell setMainText:@"What is this"];
-//            
-//            break;
-////        case 3:
-////            
-////            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    return cell;
-//}
-    
-//    
-//    static NSString *CellIdentifier = @"Cell";
-//    SiteCell *cell = (SiteCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[[SiteCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-//        
-//    }
-//    
-//    tableView.separatorColor = [UIColor clearColor];
-//    
-//    NSDictionary *dictionary = [m_sitesArray objectAtIndex:indexPath.section];
-//    NSArray *array = [dictionary objectForKey:@"Sites"];
-//    AnatomicSiteDescription * cellValue = (AnatomicSiteDescription*)[array objectAtIndex:indexPath.row];
-//    [cell setMainText:cellValue.longname];
-//    
-//    return cell;
-//}
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
@@ -598,6 +450,8 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowExperiment" object:toSend];    
             break;
         case 2:
+
+
             break;
     }
 }
@@ -608,6 +462,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 { 
+
+    
     NSString* messageString = [NSString stringWithFormat:@"Subject: %@\n%d Trial(s)", subjectIDTextField.text, (int)trialsSlider.value];
     switch (indexPath.section) {
         case 0:
@@ -623,7 +479,7 @@
                                           delegate: self
                                  cancelButtonTitle: @"Back"
                                  otherButtonTitles: @"Yes", nil];
-//                                                 otherButtonTitles: @"I already have one.", @"Yes!", nil];
+
                 [alert show];
                 [alert release];
 
@@ -638,9 +494,8 @@
         case 1:
             
             break;
-        case 2:
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowAbout" object:nil];    
+        case 3:
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowWeb" object:nil];                
 
             // show id
             
@@ -649,8 +504,9 @@
             break;
     }
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];     
     
-    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
+//    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
 
 
 }   
@@ -676,19 +532,9 @@
     label.font = [UIFont fontWithName:@"Helvetica" size:16];
     label.text = sectionTitle;
     
-    
-    //    UIButton * infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    //    infoButton.alpha = 0.25f;
-    //    infoButton.tag = section;
-    //    [infoButton setFrame:CGRectMake(kSiteWidth - 30 , 18, 15, 15)];
-    //    [infoButton addTarget:self action:@selector(tapButton:) forControlEvents:UIControlEventTouchUpInside];
-    //    
-    
-    // Create header view and add label as a subview
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     [view autorelease];
     [view addSubview:label];
-    //    [view addSubview:infoButton];
     return view;
 }
 

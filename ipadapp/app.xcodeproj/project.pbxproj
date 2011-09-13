@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0045C1142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C0142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png */; };
+		AC0045C314200309002A88DA /* iOS SimulatorScreenSnapz007b.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C214200309002A88DA /* iOS SimulatorScreenSnapz007b.png */; };
+		AC0045C51420037B002A88DA /* iOS SimulatorScreenSnapz007c.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C41420037B002A88DA /* iOS SimulatorScreenSnapz007c.png */; };
 		AC032FFB13B65F02003BEFC1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC032FFA13B65F02003BEFC1 /* AVFoundation.framework */; };
 		AC032FFD13B65F19003BEFC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC032FFC13B65F19003BEFC1 /* QuartzCore.framework */; };
 		AC032FFF13B65F1D003BEFC1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC032FFE13B65F1D003BEFC1 /* ImageIO.framework */; };
@@ -29,7 +32,6 @@
 		AC0C491813F7580D0009BE5B /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C490C13F7580D0009BE5B /* CJSONScanner.m */; };
 		AC0C491913F7580D0009BE5B /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C490E13F7580D0009BE5B /* CJSONSerializer.m */; };
 		AC1BCC6413B573A3003F89CA /* SiteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCC6313B573A3003F89CA /* SiteCell.m */; };
-		AC1BCC6A13B57797003F89CA /* AboutMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCC6913B57797003F89CA /* AboutMenuViewController.m */; };
 		AC1BCC8513B57A26003F89CA /* FJTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCC8413B57A26003F89CA /* FJTransitionController.m */; };
 		AC1BCC9713B58360003F89CA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1BCC9613B58360003F89CA /* MainWindow.xib */; };
 		AC4B41B113B5699700780872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B41B013B5699700780872 /* UIKit.framework */; };
@@ -53,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0045C0142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007a.png"; path = "../iOS SimulatorScreenSnapz007a.png"; sourceTree = "<group>"; };
+		AC0045C214200309002A88DA /* iOS SimulatorScreenSnapz007b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007b.png"; path = "../iOS SimulatorScreenSnapz007b.png"; sourceTree = "<group>"; };
+		AC0045C41420037B002A88DA /* iOS SimulatorScreenSnapz007c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007c.png"; path = "../iOS SimulatorScreenSnapz007c.png"; sourceTree = "<group>"; };
 		AC032FFA13B65F02003BEFC1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC032FFC13B65F19003BEFC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AC032FFE13B65F1D003BEFC1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -89,8 +94,6 @@
 		AC1BCC5813B56D5A003F89CA /* GuiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiConstants.h; sourceTree = "<group>"; };
 		AC1BCC6213B573A3003F89CA /* SiteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteCell.h; sourceTree = "<group>"; };
 		AC1BCC6313B573A3003F89CA /* SiteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteCell.m; sourceTree = "<group>"; };
-		AC1BCC6813B57797003F89CA /* AboutMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutMenuViewController.h; path = app.xcodeproj/AboutMenuViewController.h; sourceTree = SOURCE_ROOT; };
-		AC1BCC6913B57797003F89CA /* AboutMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutMenuViewController.m; path = app.xcodeproj/AboutMenuViewController.m; sourceTree = SOURCE_ROOT; };
 		AC1BCC8313B57A26003F89CA /* FJTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTransitionController.h; sourceTree = "<group>"; };
 		AC1BCC8413B57A26003F89CA /* FJTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTransitionController.m; sourceTree = "<group>"; };
 		AC1BCC8713B57BE3003F89CA /* MacroUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUtilities.h; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		AC03302213B67441003BEFC1 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				AC0C491A13F758120009BE5B /* TouchJSON */,
 				AC1BCC8713B57BE3003F89CA /* MacroUtilities.h */,
 				AC1BCC8313B57A26003F89CA /* FJTransitionController.h */,
 				AC1BCC8413B57A26003F89CA /* FJTransitionController.m */,
@@ -156,6 +160,9 @@
 		AC0C48DF13F74CE00009BE5B /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				AC0045C41420037B002A88DA /* iOS SimulatorScreenSnapz007c.png */,
+				AC0045C214200309002A88DA /* iOS SimulatorScreenSnapz007b.png */,
+				AC0045C0142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png */,
 				AC0C48E013F74CE40009BE5B /* MainWindow-iPad.xib */,
 				AC5A3F871402125800F5BCEE /* mesh-background.png */,
 				AC0C48E213F752160009BE5B /* Default-Portrait~ipad.png */,
@@ -171,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				AC653CE6141F235F00650AA5 /* SyncSound */,
-				AC0C491A13F758120009BE5B /* TouchJSON */,
 				AC0C48E713F754680009BE5B /* ExperimentViewController.h */,
 				AC0C48E813F754680009BE5B /* ExperimentViewController.m */,
 				AC653CE1141F0A3500650AA5 /* example_trial.json */,
@@ -242,15 +248,6 @@
 			name = MainMenu;
 			sourceTree = "<group>";
 		};
-		AC1BCC8613B57B49003F89CA /* ReviewView */ = {
-			isa = PBXGroup;
-			children = (
-				AC1BCC6813B57797003F89CA /* AboutMenuViewController.h */,
-				AC1BCC6913B57797003F89CA /* AboutMenuViewController.m */,
-			);
-			name = ReviewView;
-			sourceTree = "<group>";
-		};
 		AC4B41A113B5699700780872 = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +289,6 @@
 				AC4B41BC13B5699700780872 /* app-Prefix.pch */,
 				AC4B41BF13B5699700780872 /* appAppDelegate.h */,
 				AC4B41C013B5699700780872 /* appAppDelegate.m */,
-				AC1BCC8613B57B49003F89CA /* ReviewView */,
 				AC0C48E413F754150009BE5B /* ExperimentView */,
 				AC1BCC6513B57584003F89CA /* MainMenu */,
 				ACA623EB13B5909000BCEB06 /* WebView */,
@@ -398,6 +394,9 @@
 				AC653CED141F239000650AA5 /* Tink.wav in Resources */,
 				AC653CEE141F239000650AA5 /* Tock.wav in Resources */,
 				AC653CF0141F23A700650AA5 /* dtmf-0.wav in Resources */,
+				AC0045C1142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png in Resources */,
+				AC0045C314200309002A88DA /* iOS SimulatorScreenSnapz007b.png in Resources */,
+				AC0045C51420037B002A88DA /* iOS SimulatorScreenSnapz007c.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +411,6 @@
 				AC4B41C113B5699700780872 /* appAppDelegate.m in Sources */,
 				AC4B41CC13B569B800780872 /* MainMenuViewController.m in Sources */,
 				AC1BCC6413B573A3003F89CA /* SiteCell.m in Sources */,
-				AC1BCC6A13B57797003F89CA /* AboutMenuViewController.m in Sources */,
 				AC1BCC8513B57A26003F89CA /* FJTransitionController.m in Sources */,
 				ACA623EE13B590E800BCEB06 /* WebViewController.m in Sources */,
 				AC0C48E913F754680009BE5B /* ExperimentViewController.m in Sources */,

@@ -1,10 +1,38 @@
-//
-//  appAppDelegate.m
-//  app
-//
-//  Created by Rich Stoner on 6/24/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+/*
+ * Created by Rich Stoner, September 10th, 2011
+ * 
+ * Copyright (c) 2011 Rich Stoner
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 
+ * Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the following disclaimer.
+ * 
+ * Redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution.
+ * 
+ * Neither the name of the project's author nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
 
 #import "appAppDelegate.h"
 
@@ -19,13 +47,11 @@
     
     // allocate view controllers
     mainMenuViewController          = [[MainMenuViewController alloc] initWithScreen:[UIScreen mainScreen]];    
-    aboutMenuViewController         = [[AboutMenuViewController alloc] initWithScreen:[UIScreen mainScreen]];
     experimentViewController        = [[ExperimentViewController alloc] initWithScreen:[UIScreen mainScreen]];    
     webViewController               = [[WebViewController alloc] initWithScreen:[UIScreen mainScreen]];
 
     // register view controllers in 'nav controller'
     [self.viewController setViewController:mainMenuViewController forKey:@"Main"];
-    [self.viewController setViewController:aboutMenuViewController forKey:@"About"];
     [self.viewController setViewController:experimentViewController forKey:@"Experiment"];
     [self.viewController setViewController:webViewController forKey:@"Web"];
     
@@ -39,7 +65,6 @@
 	[window layoutSubviews];	
     
     // configure listeners
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAbout:) name:@"ShowAbout" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMain:) name:@"ShowMainMenu" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showExperiment:) name:@"ShowExperiment" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSceneLabel:) name:@"UpdateSceneLabel" object:nil];
@@ -72,9 +97,11 @@
                                            
                                            
                                        }];
+  
+    [webViewController loadLocalFile];
     
-    [webViewController loadRemoteURL:[notification object]];
-    NSLog(@"To load: %@\n", [notification object]);
+//    [webViewController loadRemoteURL:[notification object]];
+//    NSLog(@"To load: %@\n", [notification object]);
 
 }
 
@@ -84,30 +111,6 @@
     
     [currentSceneLabel setText:sceneLabel];
     
-}
-
--(void)showAbout:(NSNotification*)notification
-{
-       [self.viewController loadViewControllerForKey:@"About" 
-                                        appearingViewOnTop:YES 
-                                                setupBlock:^(UIViewController *appearingViewController) {
-                                                    
-                                                    appearingViewController.view.alpha = 0;
-                                                    setViewControllerCenterPoint(FJPositionOffScreenBottom, appearingViewController);
-                                                    
-                                                } appearingViewAnimationBlock:^(UIViewController *appearingViewController) {
-                                                    
-                                                    appearingViewController.view.alpha = 1.0;
-                                                    setViewControllerCenterPoint(FJPositionCenter, appearingViewController);
-                                                    
-                                                } disappearingViewAnimationBlock:^(UIViewController *disappearingViewController) {
-                                                    
-                                                    setViewControllerCenterPoint(FJPositionOffScreenTop, disappearingViewController);
-                                                    
-                                                    
-                                                }];
-   
-   
 }
 
 -(void)showMain:(NSNotification*)notification
@@ -142,9 +145,7 @@
     
     NSNumber* numberOfTrials = [notificationDict objectForKey:@"trials"];
     NSNumber* touchSize = [notificationDict objectForKey:@"touch"];
-    
-    printf("%d %f\n", [numberOfTrials intValue], [touchSize floatValue]);
-    
+        
     [self.viewController loadViewControllerForKey:@"Experiment" 
                                appearingViewOnTop:YES 
                                        setupBlock:^(UIViewController *appearingViewController) {
