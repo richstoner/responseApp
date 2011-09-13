@@ -1,0 +1,8 @@
+%% Rich Stoner, 2011
+% import json file from ipad app into matlab
+
+json_filename = 'rich-exp-2011-09-12-23-10-15.json';
+fid = fopen(json_filename,'r');
+json_str = fid.readA
+
+[dataset] = parse_json(json_filename);

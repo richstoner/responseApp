@@ -43,7 +43,7 @@
         <div class="octowrap">
           <a class="octothorpe" href="#section-2">#</a>
         </div>
-        <h2>Scene 0 - Rest</h2>
+        <h2>Scene - Rest</h2>
 <hr />
 <p>Scene settings</p>
       </td>
@@ -98,13 +98,13 @@
         <div class="octowrap">
           <a class="octothorpe" href="#section-5">#</a>
         </div>
-        <h2>Scene 1 - Fixation</h2>
+        <h2>Scene - Fixation</h2>
 <hr />
 <p>Scene settings</p>
       </td>
       <td class=code>
         <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;1 - Preparation&#39;</span>
+<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;Preparation&#39;</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;timer&#39;</span>
@@ -144,13 +144,13 @@
         <div class="octowrap">
           <a class="octothorpe" href="#section-7">#</a>
         </div>
-        <h2>Scene 2 - Movement 0</h2>
+        <h2>Scene 2..n - Movement</h2>
 <hr />
 <p>Scene settings</p>
       </td>
       <td class=code>
         <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;2 - Movement 0&#39;</span>
+<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;Movement&#39;</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">200.0</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
 <span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch&#39;</span>
@@ -168,7 +168,7 @@
 <span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
 <span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
 <span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;sameHorizontalMidline&#39;</span>
+<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;alternateHorizontalMidline&#39;</span>
 <span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
@@ -190,257 +190,18 @@
         <div class="octowrap">
           <a class="octothorpe" href="#section-9">#</a>
         </div>
-        <h2>Scene 3 - Movement 1</h2>
-<hr />
-<p>Scene settings</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;3 - Movement 1&#39;</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">200.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch&#39;</span>
-<span class="n">scene_items</span> <span class="o">=</span> <span class="p">[]</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-10'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-10">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;oppositeHorizontalMidline&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;fixation target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;center&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;green&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scene_items</span>
-<span class="n">scene_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-11'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-11">#</a>
-        </div>
-        <h2>Scene 4 - Movement 2</h2>
-<hr />
-<p>Scene settings</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;4 - Movement 2&#39;</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">200.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch&#39;</span>
-<span class="n">scene_items</span> <span class="o">=</span> <span class="p">[]</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-12'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-12">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;oppositeHorizontalMidline&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;fixation target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;center&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;green&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scene_items</span>
-<span class="n">scene_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-13'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-13">#</a>
-        </div>
-        <h2>Scene 5 - Movement 3</h2>
-<hr />
-<p>Scene settings</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;5 - Movement 3&#39;</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">200.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch&#39;</span>
-<span class="n">scene_items</span> <span class="o">=</span> <span class="p">[]</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-14'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-14">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;oppositeHorizontalMidline&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;fixation target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;center&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;green&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scene_items</span>
-<span class="n">scene_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-15'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-15">#</a>
-        </div>
-        <h2>Scene 6 - Movement 4</h2>
-<hr />
-<p>Scene settings</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;6 - Movement 4&#39;</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">200.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch&#39;</span>
-<span class="n">scene_items</span> <span class="o">=</span> <span class="p">[]</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-16'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-16">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;oppositeHorizontalMidline&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;fixation target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;center&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;green&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scene_items</span>
-<span class="n">scene_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-17'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-17">#</a>
-        </div>
-        <h2>Scene 7 - Rest</h2>
-<hr />
-<p>Scene settings</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;7 - Rest&#39;</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;base_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">5.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;flex_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;trigger&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;timer&#39;</span>
-<span class="n">scene_items</span> <span class="o">=</span> <span class="p">[]</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-18'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-18">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;fixation target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;red&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;center&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-19'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-19">#</a>
-        </div>
-        <p>Scene items</p>
-      </td>
-      <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">scene_item</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;circle&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;touch target&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;blue&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;randomHorizontalMidline&#39;</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;hidden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_item</span><span class="p">[</span><span class="s">&#39;touchable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="n">scene_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene_item</span><span class="p">)</span>
-
-
-<span class="n">scene</span><span class="p">[</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scene_items</span>
-<span class="n">scene_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span></pre></div></pre></div>
-      </td>
-    </tr><tr id='section-20'>
-      <td class=docs>
-        <div class="octowrap">
-          <a class="octothorpe" href="#section-20">#</a>
-        </div>
         <h2>Generate file</h2>
 <hr />
 <p>Settings for generated file</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre><div class="highlight"><pre><span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;exampled_trial.json&#39;</span>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;example_trial.json&#39;</span>
 <span class="n">foutput</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s">&#39;w&#39;</span><span class="p">)</span></pre></div></pre></div>
       </td>
-    </tr><tr id='section-21'>
+    </tr><tr id='section-10'>
       <td class=docs>
         <div class="octowrap">
-          <a class="octothorpe" href="#section-21">#</a>
+          <a class="octothorpe" href="#section-10">#</a>
         </div>
         <p>Write file</p>
       </td>
@@ -448,10 +209,10 @@
         <div class='highlight'><pre><div class="highlight"><pre><span class="n">foutput</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">scene_list</span><span class="p">))</span>
 <span class="n">foutput</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></pre></div></pre></div>
       </td>
-    </tr><tr id='section-22'>
+    </tr><tr id='section-11'>
       <td class=docs>
         <div class="octowrap">
-          <a class="octothorpe" href="#section-22">#</a>
+          <a class="octothorpe" href="#section-11">#</a>
         </div>
         <p>Print console output</p>
       </td>
