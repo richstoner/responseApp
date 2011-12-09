@@ -205,7 +205,7 @@
     NSArray* logArray = [NSArray arrayWithObjects:[NSString stringWithFormat:@"Sound Start: %d", currentTrial], [NSString stringWithFormat:@"%f", timePassed_ms], nil];
     [trialArray addObject:logArray];
 
-    [SimpleSound playSoundWithName:@"Tink" type:@"wav"];
+    [SimpleSound playSoundWithName:@"1kHz_44100Hz_16bit_new" type:@"wav"];
 
     NSTimeInterval timePassed_ms2 = [startdate timeIntervalSinceNow] * -1000.0;
     NSArray* logArray2 = [NSArray arrayWithObjects:[NSString stringWithFormat:@"Trial Start: %d", currentTrial], [NSString stringWithFormat:@"%f", timePassed_ms2], nil];
@@ -228,9 +228,9 @@
     }
     
     NSString* scene_name = [NSString stringWithFormat:@"%d - %@", sceneIndex, [sceneDict objectForKey:@"name"]];
-    NSNumber* base_time = [sceneDict objectForKey:@"base_time"];
-    NSNumber* flex_time = [sceneDict objectForKey:@"flex_time"];        
-    NSString* trigger = [sceneDict objectForKey:@"trigger"];
+//    NSNumber* base_time = [sceneDict objectForKey:@"base_time"];
+//    NSNumber* flex_time = [sceneDict objectForKey:@"flex_time"];        
+//    NSString* trigger = [sceneDict objectForKey:@"trigger"];
      
     NSTimeInterval timePassed_ms = [startdate timeIntervalSinceNow] * -1000.0;
     NSArray* logArray = [NSArray arrayWithObjects:[NSString stringWithFormat:@"Scene: %@", scene_name], [NSString stringWithFormat:@"%f", timePassed_ms], nil];
@@ -451,6 +451,13 @@
         NSArray* logArray = [NSArray arrayWithObjects:[NSString stringWithFormat:@"Trial End: %d", currentTrial], [NSString stringWithFormat:@"%f", timePassed_ms], nil];
         [trialArray addObject:logArray];
         
+        NSTimeInterval timePassed_ms2 = [startdate timeIntervalSinceNow] * -1000.0;
+        NSArray* logArray2 = [NSArray arrayWithObjects:[NSString stringWithFormat:@"Sound Play: %d", currentTrial], [NSString stringWithFormat:@"%f", timePassed_ms2], nil];
+        [trialArray addObject:logArray2];
+        
+        [SimpleSound playSoundWithName:@"1kHz_44100Hz_16bit_new" type:@"wav"];
+
+        
         currentSceneIndex = 0;
         currentTrial++;
     }
@@ -458,10 +465,14 @@
     
     if (currentTrial <= maxTrials-1) {
         
+
+        
         [self loadScene:currentSceneIndex];
     }
     else
     {
+        
+        
         [self writeJSONresult];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowMainMenu" object:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateSceneLabel" object:@"Ready"];            
@@ -560,7 +571,7 @@
         NSString* message = [record objectAtIndex:0];
         NSNumber* timepoint = [record objectAtIndex:1];
         
-        [csv appendFormat:@"<p>%@ - %f ms</p>\n", message, [timepoint floatValue]];
+        [csv appendFormat:@"<p><b>%@</b> - %f ms</p>\n", message, [timepoint floatValue]];
     }
     
     [csv appendString:@"</body></html>"];

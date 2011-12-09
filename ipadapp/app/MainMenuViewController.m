@@ -39,6 +39,7 @@
 
 
 @implementation MainMenuViewController
+@synthesize subjectIDTextField;
 
 #pragma mark -
 #pragma mark Initialization and teardown
@@ -90,6 +91,7 @@
     mainMenuTable.dataSource = self;
     mainMenuTable.separatorColor = [UIColor redColor];;
     mainMenuTable.backgroundColor = [UIColor clearColor];
+    mainMenuTable.scrollEnabled = NO;
     
     [self.view addSubview:mainMenuTable];
 }
@@ -130,7 +132,7 @@
             break;
         case 3:
             //review last
-            return 1;            
+            return 2;            
             break;
             
         default:
@@ -143,11 +145,11 @@
 {
     switch (indexPath.section) {
         case 0:
-            return 80.0f;
+            return 50.0f;
             break;
             
         default:
-            return 50.0f;            
+            return 45.0f;            
             break;
     }
 }
@@ -213,7 +215,7 @@
                         trialsSlider = [ [ UISlider alloc ] initWithFrame: CGRectMake(150, 0, 150, 50) ];
                         trialsSlider.autoresizingMask = UIViewAutoresizingFlexibleWidth;
                         trialsSlider.minimumValue = 1.0;
-                        trialsSlider.maximumValue = 10.0;
+                        trialsSlider.maximumValue = 20.0;
                         trialsSlider.tag = 0;
                         trialsSlider.value = 1;
                         trialsSlider.continuous = NO;
@@ -345,7 +347,10 @@
             case 3:
                 switch (indexPath.row) {
                     case 0:
-                        cell.textLabel.text = @"Review Last"; 
+                        cell.textLabel.text = @"How to use this app"; 
+                        break;
+                    case 1:
+                        cell.textLabel.text = @"Review the last trial"; 
                         break;
                     default:
                         break;
@@ -495,7 +500,21 @@
             
             break;
         case 3:
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowWeb" object:nil];                
+            
+            switch (indexPath.row) {
+                case 0:
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowHowTo" object:nil];                
+
+                    break;
+                case 1:
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowWeb" object:nil];                
+
+                    
+                    break;                    
+                default:
+                    break;
+            }
+            
 
             // show id
             
@@ -513,7 +532,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 35.0f;
+    return 40.0f;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

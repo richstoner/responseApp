@@ -70,6 +70,8 @@
     BOOL isFirstLoad;
 }
 
+@property(nonatomic, retain) UITextField* subjectIDTextField;
+
 -(id)   initWithScreen:(UIScreen *)newScreenForDisplay;
 -(void) configureMenu;
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A808A870146C7E96000A132E /* basic_instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = A808A86E146C7E96000A132E /* basic_instructions.png */; };
+		A808A871146C7E96000A132E /* transfer_data.png in Resources */ = {isa = PBXBuildFile; fileRef = A808A86F146C7E96000A132E /* transfer_data.png */; };
 		AC0045C1142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C0142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png */; };
 		AC0045C314200309002A88DA /* iOS SimulatorScreenSnapz007b.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C214200309002A88DA /* iOS SimulatorScreenSnapz007b.png */; };
 		AC0045C51420037B002A88DA /* iOS SimulatorScreenSnapz007c.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0045C41420037B002A88DA /* iOS SimulatorScreenSnapz007c.png */; };
@@ -43,6 +45,8 @@
 		AC4B41CC13B569B800780872 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B41CB13B569B800780872 /* MainMenuViewController.m */; };
 		AC4B41CE13B56A6100780872 /* Default_portrait_highres.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4B41CD13B56A6100780872 /* Default_portrait_highres.png */; };
 		AC4B41D013B56BCF00780872 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4B41CF13B56BCF00780872 /* Default@2x.png */; };
+		AC50543F142E63700068EBED /* 1kHz_44100Hz_16bit_05sec.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC50543E142E63700068EBED /* 1kHz_44100Hz_16bit_05sec.wav */; };
+		AC505442142E649C0068EBED /* 1kHz_44100Hz_16bit_new.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC505441142E649C0068EBED /* 1kHz_44100Hz_16bit_new.wav */; };
 		AC5A3F881402125800F5BCEE /* mesh-background.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A3F871402125800F5BCEE /* mesh-background.png */; };
 		AC653CE2141F0A3500650AA5 /* example_trial.json in Resources */ = {isa = PBXBuildFile; fileRef = AC653CE1141F0A3500650AA5 /* example_trial.json */; };
 		AC653CE5141F22F000650AA5 /* SimpleSound.m in Sources */ = {isa = PBXBuildFile; fileRef = AC653CE4141F22F000650AA5 /* SimpleSound.m */; };
@@ -55,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A808A86E146C7E96000A132E /* basic_instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_instructions.png; sourceTree = "<group>"; };
+		A808A86F146C7E96000A132E /* transfer_data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transfer_data.png; sourceTree = "<group>"; };
 		AC0045C0142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007a.png"; path = "../iOS SimulatorScreenSnapz007a.png"; sourceTree = "<group>"; };
 		AC0045C214200309002A88DA /* iOS SimulatorScreenSnapz007b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007b.png"; path = "../iOS SimulatorScreenSnapz007b.png"; sourceTree = "<group>"; };
 		AC0045C41420037B002A88DA /* iOS SimulatorScreenSnapz007c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS SimulatorScreenSnapz007c.png"; path = "../iOS SimulatorScreenSnapz007c.png"; sourceTree = "<group>"; };
@@ -98,7 +104,7 @@
 		AC1BCC8413B57A26003F89CA /* FJTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTransitionController.m; sourceTree = "<group>"; };
 		AC1BCC8713B57BE3003F89CA /* MacroUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUtilities.h; sourceTree = "<group>"; };
 		AC1BCC9613B58360003F89CA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		AC4B41AC13B5699700780872 /* ResponseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4B41AC13B5699700780872 /* Response App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Response App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B41B013B5699700780872 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC4B41B213B5699700780872 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC4B41B413B5699700780872 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +118,8 @@
 		AC4B41CB13B569B800780872 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		AC4B41CD13B56A6100780872 /* Default_portrait_highres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_portrait_highres.png; sourceTree = "<group>"; };
 		AC4B41CF13B56BCF00780872 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		AC50543E142E63700068EBED /* 1kHz_44100Hz_16bit_05sec.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1kHz_44100Hz_16bit_05sec.wav; sourceTree = "<group>"; };
+		AC505441142E649C0068EBED /* 1kHz_44100Hz_16bit_new.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1kHz_44100Hz_16bit_new.wav; sourceTree = "<group>"; };
 		AC5A3F871402125800F5BCEE /* mesh-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesh-background.png"; sourceTree = "<group>"; };
 		AC653CE1141F0A3500650AA5 /* example_trial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = example_trial.json; path = ../../stimulus/example_trial.json; sourceTree = "<group>"; };
 		AC653CE3141F22F000650AA5 /* SimpleSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSound.h; sourceTree = "<group>"; };
@@ -260,7 +268,7 @@
 		AC4B41AD13B5699700780872 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC4B41AC13B5699700780872 /* ResponseApp.app */,
+				AC4B41AC13B5699700780872 /* Response App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +327,8 @@
 				AC653CEB141F239000650AA5 /* Tink.wav */,
 				AC653CEC141F239000650AA5 /* Tock.wav */,
 				AC653CEF141F23A700650AA5 /* dtmf-0.wav */,
+				AC50543E142E63700068EBED /* 1kHz_44100Hz_16bit_05sec.wav */,
+				AC505441142E649C0068EBED /* 1kHz_44100Hz_16bit_new.wav */,
 			);
 			name = SyncSound;
 			sourceTree = "<group>";
@@ -329,6 +339,8 @@
 				ACA623EC13B590E800BCEB06 /* WebViewController.h */,
 				ACA623ED13B590E800BCEB06 /* WebViewController.m */,
 				ACA623F713B595CF00BCEB06 /* helpview.html */,
+				A808A86E146C7E96000A132E /* basic_instructions.png */,
+				A808A86F146C7E96000A132E /* transfer_data.png */,
 			);
 			name = WebView;
 			sourceTree = "<group>";
@@ -350,7 +362,7 @@
 			);
 			name = app;
 			productName = app;
-			productReference = AC4B41AC13B5699700780872 /* ResponseApp.app */;
+			productReference = AC4B41AC13B5699700780872 /* Response App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -358,6 +370,9 @@
 /* Begin PBXProject section */
 		AC4B41A313B5699700780872 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = AC4B41A613B5699700780872 /* Build configuration list for PBXProject "app" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -397,6 +412,10 @@
 				AC0045C1142002E7002A88DA /* iOS SimulatorScreenSnapz007a.png in Resources */,
 				AC0045C314200309002A88DA /* iOS SimulatorScreenSnapz007b.png in Resources */,
 				AC0045C51420037B002A88DA /* iOS SimulatorScreenSnapz007c.png in Resources */,
+				AC50543F142E63700068EBED /* 1kHz_44100Hz_16bit_05sec.wav in Resources */,
+				AC505442142E649C0068EBED /* 1kHz_44100Hz_16bit_new.wav in Resources */,
+				A808A870146C7E96000A132E /* basic_instructions.png in Resources */,
+				A808A871146C7E96000A132E /* transfer_data.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Richard Stoner";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -455,8 +474,10 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3672F19E-4919-44D7-9445-77978469386B";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -464,15 +485,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Richard Stoner";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3672F19E-4919-44D7-9445-77978469386B";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -481,23 +504,22 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Richard Stoner";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "app/app-Prefix.pch";
-				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "${SRCROOT}/app/opencv_device/include";
-				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "${SRCROOT}/app/opencv_simulator/include";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "app/app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "${SRCROOT}/app/opencv_device/lib";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/app/opencv_simulator/lib\"";
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_NAME = ResponseApp;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Response App";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3672F19E-4919-44D7-9445-77978469386B";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "armv7 i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -508,22 +530,21 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Richard Stoner";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "app/app-Prefix.pch";
-				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "${SRCROOT}/app/opencv_device/include";
-				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "${SRCROOT}/app/opencv_simulator/include";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "app/app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "${SRCROOT}/app/opencv_device/lib";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/app/opencv_simulator/lib\"";
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_NAME = ResponseApp;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Response App";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3672F19E-4919-44D7-9445-77978469386B";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 i386";
 				WRAPPER_EXTENSION = app;

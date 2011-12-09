@@ -49,8 +49,11 @@
     UIActivityIndicatorView* activityIndicator;
 }
 
+@property(nonatomic, retain) UIWebView* webView;
+
 - (id)      initWithScreen:(UIScreen *)newScreenForDisplay;
 -(void)     loadLocalFile;
+-(void)     loadHowToFile;
 -(void)     loadRemoteURL:(NSString*)remoteURL;
 
 @end

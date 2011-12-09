@@ -5,9 +5,10 @@
   	font-family:'Helvetica',Georgia,Serif;
       color: #000;   
       background-color: transparent;
-    line-height: 12pt;
-    font-size: 10pt;
+    line-height: 16pt;
+    font-size: 13pt;
     text-align: left;
+      padding: 20px;
 }
 
 	h1 {
@@ -16,8 +17,8 @@
         text-align: left;
         font-weight: bold;
      /*   text-shadow:  #000 1px 1px 4px;*/
-        line-height: 12pt;
-        font-size: 11pt;
+        line-height: 20pt;
+        font-size: 20pt;
         padding-bottom: 3px;
 	}
 	
@@ -30,15 +31,29 @@
 	}
 
 	p {
-	padding: 5px;
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
 	}
+    
+      img {
+          margin-left:10px;
+          width: 900px;
+      }
 
   </style>
 </head>
 <body>
-    <br>
-    <h1>Heading</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, odio in gravida sodales, velit sem pulvinar diam, ut aliquet lorem enim vitae diam. Phasellus id consectetur nisl. Aenean a felis id enim sollicitudin adipiscing a a nisi. Curabitur bibendum interdum lorem, at cursus mi lacinia ut. Duis pharetra odio eu quam luctus egestas. Proin cursus malesuada dolor vel laoreet. Donec auctor, nunc ac suscipit iaculis, turpis risus tincidunt massa, at molestie justo sapien nec libero. Pellentesque cursus lectus sit amet ante pulvinar gravida. Donec pellentesque gravida turpis, non rutrum purus tristique sed. Suspendisse vel tortor magna, id sollicitudin lacus.</p>
-    <p>Sed quis lorem eu tortor placerat blandit at a velit. Sed dapibus interdum elit sed placerat. Aenean id elit augue. Aliquam aliquam urna quis dui placerat hendrerit. Etiam enim massa, elementum nec dapibus et, mollis a leo. Nunc dictum metus non neque dignissim tristique. Vivamus fermentum risus vel metus consectetur ac bibendum sem placerat. Sed venenatis commodo dui, at porttitor magna convallis vel. Praesent adipiscing rutrum lectus sed imperdiet. Suspendisse potenti. Mauris diam purus, elementum ac luctus ac, molestie in lacus. Duis sed felis nisi, in ultrices turpis. Vivamus placerat, ligula id ultrices ultricies, lectus orci congue purus, vitae vehicula dui eros id nisi. Quisque dapibus imperdiet lobortis. Vivamus et erat at nibh placerat imperdiet. Etiam sit amet dui ut felis ultricies aliquam eu quis felis. Vestibulum lorem turpis, condimentum ac viverra in, imperdiet et dui. Nulla ullamcorper, odio et dignissim varius, libero tortor vestibulum sem, vestibulum pellentesque nisl massa eget mauris.
-        </p>
+    <h1>What</h1>
+
+    <p>This application provides a simple touch interface for neuroscience and psychology research. It was developed through a collaboration between Dr. Coralie de Hemptinne, Dr. Rich Stoner, and Dr. Phillip Starr for a research project studying the effect of deep brain stimulation on cortical local field potentials recorded intraoperatively in patients with movement disorders undergoing deep brain stimulation implantation surgery.</p>
+    
+    <h1>How</h1>
+    <p>While undergoing a surgical procedure to implant a deep brain stimulator, subjects are presented with the iPad device. Visual cues are then displayed on the screen. Each trial consists of a brief rest period, fixation period, and then a series of tap targets that they must hit before proceeding to the next cue. Experimental settings can be configured based on subject input and capabilities. Once complete, timing data can be reviewed on-device or transferred to a desktop PC for further analysis (a matlab importer is provided).</p>
+    <h1>Running an experiment</h1>
+    <img src="basic_instructions.png"/>
+
+    <h1>Transferring data to a PC</h1>
+    <img src="transfer_data.png"/>
+
 </body>

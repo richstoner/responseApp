@@ -86,7 +86,8 @@ typedef enum {
 -(void) writeJSONresult;
 -(void) printSummary;
 -(void) startExperiment;
-
+-(void) nextScene;
+-(void) nextSceneTouch;
 
 -(BOOL) nextBool:(double)probability;
 -(void) configureExperimentTrials:(int)numTrials andTouchSize:(float)touchSize;

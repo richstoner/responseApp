@@ -58,6 +58,7 @@
     // load default
     [self.viewController loadViewControllerForKey:@"Main"];
 
+
     // create view stack
     [window addSubview:viewController.view];    
     [self configureHeader];
@@ -73,6 +74,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addTrial:) name:@"addTrials" object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showWeb:) name:@"ShowWeb" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHowTo:) name:@"ShowHowTo" object:nil];
+
+    
 
     return YES;
 }
@@ -105,6 +109,32 @@
 
 }
 
+-(void)showHowTo:(NSNotification*)notification
+{
+    [self.viewController loadViewControllerForKey:@"Web" 
+                               appearingViewOnTop:YES 
+                                       setupBlock:^(UIViewController *appearingViewController) {
+                                           
+                                           appearingViewController.view.alpha = 0;
+                                           setViewControllerCenterPoint(FJPositionOffScreenBottom, appearingViewController);
+                                           
+                                       } appearingViewAnimationBlock:^(UIViewController *appearingViewController) {
+                                           
+                                           appearingViewController.view.alpha = 1.0;
+                                           setViewControllerCenterPoint(FJPositionCenter, appearingViewController);
+                                           
+                                       } disappearingViewAnimationBlock:^(UIViewController *disappearingViewController) {
+                                           
+                                           setViewControllerCenterPoint(FJPositionOffScreenTop, disappearingViewController);
+                                           
+                                           
+                                       }];
+    
+    [webViewController loadHowToFile];
+    [webViewController.webView setScalesPageToFit:YES];
+    
+}
+
 -(void)updateSceneLabel:(NSNotification*)notification
 {
     NSString* sceneLabel = [notification object];
@@ -135,6 +165,8 @@
                                            
                                        }];
     
+    
+    [mainMenuViewController.subjectIDTextField becomeFirstResponder];
     
 }
 
@@ -184,12 +216,12 @@
     CGSize btbsize = [headerToolbar frame].size;
     UIView* btbfake = [[UIView alloc] initWithFrame:CGRectMake(0,0,btbsize.width, btbsize.height)];
     [btbfake setBackgroundColor:[UIColor whiteColor]];
-    [headerToolbar insertSubview:btbfake atIndex:0];
+    [headerToolbar insertSubview:btbfake atIndex:1];
     [btbfake release];
     
     // create main title label
     UILabel* titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, kHeaderHeight)];
-    titleLabel.text = @"Response App";
+    titleLabel.text = @"NeuroResponse";
     titleLabel.textColor = [UIColor blackColor];
     [titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:18]];
     titleLabel.userInteractionEnabled = YES;
@@ -237,12 +269,32 @@
     // add to main window
     [window addSubview:headerToolbar];
     
+    NSString *imageName = @"Default-Portrait~ipad.png";
+    splashView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    splashView.frame = CGRectMake(0,0, 768, 1024);
+//    splashView.frame = self.frame;
+    splashView.center = self.window.center;
     
-}
+    [window addSubview:splashView];
+    [window bringSubviewToFront:splashView];
+    
+    [UIView animateWithDuration:3.0
+                          delay:1.5
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^{
+                         
+                         splashView.alpha = 0.0f;
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [splashView removeFromSuperview];
+                         [splashView release];
+                         
+                         [mainMenuViewController.subjectIDTextField becomeFirstResponder];
 
-- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
-    [splashView removeFromSuperview];
-    [splashView release];
+                     }];
+        
+
 }
 
 

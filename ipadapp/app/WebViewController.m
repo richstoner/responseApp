@@ -38,6 +38,7 @@
 
 @implementation WebViewController
 
+@synthesize webView;
 
 #pragma mark -
 #pragma mark Initialization and teardown
@@ -135,6 +136,19 @@
     NSURL *baseURL = [NSURL fileURLWithPath:filepath];
     [webview loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
 
+}
+
+-(void) loadHowToFile
+{
+//    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    NSString* lastTrialPath = [NSString stringWithFormat:@"%@/helpview.html", documentsDirectory];
+    
+    NSString* htmlpath = [[NSBundle mainBundle] pathForResource:@"helpview" ofType:@"html"];
+    NSData *htmlData = [NSData dataWithContentsOfFile:htmlpath];  
+    NSString *filepath = [[NSBundle mainBundle] bundlePath];
+    NSURL *baseURL = [NSURL fileURLWithPath:filepath];
+    [webview loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
+    
 }
 
 -(void)     loadRemoteURL:(NSString*)remoteURL
